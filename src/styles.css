@@ -230,41 +230,7 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
 /* Delicadas flores de acuarela */
 .hero::before,
 
-.language-screen::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.85;
-  background-image:
-    /* Flor rosa superior izquierda */
-    radial-gradient(ellipse 9px 15px at 13% 16%, #e8b8b5 95%, transparent 100%),
-    radial-gradient(ellipse 9px 15px at 17% 16%, #e8b8b5 95%, transparent 100%),
-    radial-gradient(ellipse 9px 15px at 15% 13%, #f0c9be 95%, transparent 100%),
-    radial-gradient(ellipse 9px 15px at 15% 19%, #f0c9be 95%, transparent 100%),
-    radial-gradient(circle at 15% 16%, #c49b62 0 3px, transparent 4px),
 
-    /* Flor melocotón inferior izquierda */
-    radial-gradient(ellipse 8px 13px at 9% 76%, #edc6a7 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 13% 76%, #edc6a7 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 11% 73%, #f2d7b8 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 11% 79%, #f2d7b8 95%, transparent 100%),
-    radial-gradient(circle at 11% 76%, #c49b62 0 3px, transparent 4px),
-
-    /* Flor rosa superior derecha */
-    radial-gradient(ellipse 8px 13px at 85% 25%, #e8b8b5 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 89% 25%, #e8b8b5 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 87% 22%, #f0c9be 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 87% 28%, #f0c9be 95%, transparent 100%),
-    radial-gradient(circle at 87% 25%, #c49b62 0 3px, transparent 4px),
-
-    /* Flor amarilla inferior derecha */
-    radial-gradient(ellipse 8px 13px at 88% 79%, #ead7a0 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 92% 79%, #ead7a0 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 90% 76%, #f2e4b9 95%, transparent 100%),
-    radial-gradient(ellipse 8px 13px at 90% 82%, #f2e4b9 95%, transparent 100%),
-    radial-gradient(circle at 90% 79%, #c49b62 0 3px, transparent 4px);
-}
 
 
 .hero,
@@ -325,18 +291,56 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
 
 /* Flores suaves a la derecha */
 
-.language-screen::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.55;
-  background-image:
-    radial-gradient(ellipse 2px 18px at 24% 18%, #a9b79a 95%, transparent 100%),
-    radial-gradient(ellipse 2px 15px at 24% 22%, #a9b79a 95%, transparent 100%),
-    radial-gradient(ellipse 2px 18px at 87% 27%, #a9b79a 95%, transparent 100%),
-    radial-gradient(ellipse 2px 15px at 87% 31%, #a9b79a 95%, transparent 100%),
-    radial-gradient(ellipse 2px 18px at 13% 77%, #a9b79a 95%, transparent 100%),
-    radial-gradient(ellipse 2px 15px at 13% 81%, #a9b79a 95%, transparent 100%);
+
+/* Portada de boda: flores delicadas */
+.language-screen {
+  background: #fbf7ef !important;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
+
+.language-screen .eyebrow {
+  position: relative;
+  z-index: 1;
+}
+
+/* Decoración floral en los bordes */
+.language-screen::before {
+  content: "✿";
+  position: absolute;
+  top: 9%;
+  left: 8%;
+  color: #d9a0a0;
+  font-size: 46px;
+  font-weight: 400;
+  opacity: 0.75;
+  transform: rotate(-18deg);
+  text-shadow:
+    14px 22px 0 #e8c6b2,
+    48px 105px 0 #d8b7bd,
+    8px 220px 0 #e8d9a8,
+    35px 340px 0 #d9a0a0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.language-screen::after {
+  content: "✿";
+  position: absolute;
+  right: 9%;
+  bottom: 10%;
+  color: #c7cfb5;
+  font-size: 42px;
+  opacity: 0.8;
+  transform: rotate(16deg);
+  text-shadow:
+    -18px -40px 0 #e8c6b2,
+    -42px -140px 0 #d9a0a0,
+    -6px -245px 0 #e8d9a8,
+    -32px -350px 0 #c7cfb5;
+  pointer-events: none;
+  z-index: -1;
+}
+
 
