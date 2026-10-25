@@ -26,11 +26,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .hero {
   min-height: 710px;
-  color: #fffdf6;
-  background:
-    linear-gradient(180deg, rgba(33, 48, 35, .25), rgba(33, 48, 35, .72)),
-    url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85')
-    center 45% / cover;
+  color: #59634c;
+  background-color: #faf8f2;
+  background-image:
+    radial-gradient(ellipse at 12% 15%, #e9dfd5 0%, transparent 22%),
+    radial-gradient(ellipse at 88% 80%, #e4e8d9 0%, transparent 25%),
+    radial-gradient(ellipse at 80% 12%, #f0e6dc 0%, transparent 18%);
   position: relative;
 }
 
