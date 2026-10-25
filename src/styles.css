@@ -343,40 +343,87 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
   z-index: -1;
 }
 
-/* Flores silvestres de primavera */
+
+/* Portada nupcial: flores delicadas y tonos acuarela */
 .language-screen {
-  background: #fbf7ef !important;
+  background: #fbf8f2 !important;
   position: relative;
   isolation: isolate;
   overflow: hidden;
 }
 
-.language-screen::before {
-  content: "🌼 🌿 🌸\A  🌷 🌼 🌿";
-  white-space: pre;
-  position: absolute;
-  top: 4%;
-  left: 3%;
-  font-size: clamp(22px, 5vw, 34px);
-  line-height: 2;
-  opacity: 0.85;
-  transform: rotate(-10deg);
-  pointer-events: none;
-  z-index: -1;
+/* Mantener el texto de la portada por encima de la decoración */
+.language-screen > * {
+  position: relative;
+  z-index: 1;
 }
 
-.language-screen::after {
-  content: "🌿 🌸 🌷\A 🌼 🌿 🌸";
-  white-space: pre;
+/* Ramillete suave en la esquina superior izquierda */
+.language-screen::before {
+  content: "";
   position: absolute;
-  right: 3%;
-  bottom: 4%;
-  font-size: clamp(22px, 5vw, 34px);
-  line-height: 2;
-  opacity: 0.85;
-  transform: rotate(10deg);
+  z-index: 0;
+  top: -35px;
+  left: -35px;
+  width: 230px;
+  height: 310px;
   pointer-events: none;
-  z-index: -1;
+  opacity: 0.78;
+  background:
+    radial-gradient(ellipse at 35% 22%,
+      rgba(211, 151, 157, 0.55) 0 5%,
+      transparent 6%),
+    radial-gradient(ellipse at 43% 19%,
+      rgba(232, 190, 179, 0.65) 0 7%,
+      transparent 8%),
+    radial-gradient(ellipse at 28% 29%,
+      rgba(222, 174, 178, 0.55) 0 6%,
+      transparent 7%),
+    radial-gradient(ellipse at 51% 31%,
+      rgba(232, 211, 157, 0.65) 0 5%,
+      transparent 6%),
+    radial-gradient(ellipse at 62% 43%,
+      rgba(205, 190, 151, 0.5) 0 8%,
+      transparent 9%),
+    linear-gradient(125deg,
+      transparent 43%,
+      rgba(130, 151, 112, 0.35) 44% 45%,
+      transparent 46%);
+  filter: blur(1.2px);
+  transform: rotate(-8deg);
 }
+
+/* Ramillete en la esquina inferior derecha */
+.language-screen::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: -35px;
+  bottom: -45px;
+  width: 240px;
+  height: 310px;
+  pointer-events: none;
+  opacity: 0.72;
+  background:
+    radial-gradient(ellipse at 63% 68%,
+      rgba(213, 157, 164, 0.58) 0 6%,
+      transparent 7%),
+    radial-gradient(ellipse at 51% 61%,
+      rgba(232, 190, 179, 0.65) 0 8%,
+      transparent 9%),
+    radial-gradient(ellipse at 72% 56%,
+      rgba(221, 198, 143, 0.6) 0 5%,
+      transparent 6%),
+    radial-gradient(ellipse at 42% 44%,
+      rgba(205, 190, 151, 0.5) 0 7%,
+      transparent 8%),
+    linear-gradient(55deg,
+      transparent 48%,
+      rgba(130, 151, 112, 0.38) 49% 50%,
+      transparent 51%);
+  filter: blur(1.4px);
+  transform: rotate(8deg);
+}
+
 
 
