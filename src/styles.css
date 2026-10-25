@@ -229,20 +229,43 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
 .language-screen .eyebrow { letter-spacing: .25em; color: #707960; }
 /* Delicadas flores de acuarela */
 .hero::before,
+
 .language-screen::before {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.55;
+  opacity: 0.85;
   background-image:
-    radial-gradient(ellipse at 18% 24%, #d9a9a5 0 2px, transparent 3px),
-    radial-gradient(ellipse at 21% 27%, #d9a9a5 0 3px, transparent 4px),
-    radial-gradient(ellipse at 24% 23%, #e6c5a8 0 2px, transparent 3px),
-    radial-gradient(ellipse at 78% 34%, #c5cfae 0 3px, transparent 4px),
-    radial-gradient(ellipse at 81% 37%, #d9a9a5 0 2px, transparent 3px),
-    radial-gradient(ellipse at 75% 39%, #e6c5a8 0 3px, transparent 4px);
+    /* Flor rosa superior izquierda */
+    radial-gradient(ellipse 9px 15px at 13% 16%, #e8b8b5 95%, transparent 100%),
+    radial-gradient(ellipse 9px 15px at 17% 16%, #e8b8b5 95%, transparent 100%),
+    radial-gradient(ellipse 9px 15px at 15% 13%, #f0c9be 95%, transparent 100%),
+    radial-gradient(ellipse 9px 15px at 15% 19%, #f0c9be 95%, transparent 100%),
+    radial-gradient(circle at 15% 16%, #c49b62 0 3px, transparent 4px),
+
+    /* Flor melocotón inferior izquierda */
+    radial-gradient(ellipse 8px 13px at 9% 76%, #edc6a7 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 13% 76%, #edc6a7 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 11% 73%, #f2d7b8 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 11% 79%, #f2d7b8 95%, transparent 100%),
+    radial-gradient(circle at 11% 76%, #c49b62 0 3px, transparent 4px),
+
+    /* Flor rosa superior derecha */
+    radial-gradient(ellipse 8px 13px at 85% 25%, #e8b8b5 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 89% 25%, #e8b8b5 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 87% 22%, #f0c9be 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 87% 28%, #f0c9be 95%, transparent 100%),
+    radial-gradient(circle at 87% 25%, #c49b62 0 3px, transparent 4px),
+
+    /* Flor amarilla inferior derecha */
+    radial-gradient(ellipse 8px 13px at 88% 79%, #ead7a0 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 92% 79%, #ead7a0 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 90% 76%, #f2e4b9 95%, transparent 100%),
+    radial-gradient(ellipse 8px 13px at 90% 82%, #f2e4b9 95%, transparent 100%),
+    radial-gradient(circle at 90% 79%, #c49b62 0 3px, transparent 4px);
 }
+
 
 .hero,
 .language-screen {
@@ -301,22 +324,19 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
 }
 
 /* Flores suaves a la derecha */
+
 .language-screen::after {
   content: "";
   position: absolute;
-  z-index: -1;
   inset: 0;
   pointer-events: none;
-  opacity: 0.8;
-  background:
-    radial-gradient(ellipse at 86% 24%, #e9b6a9 0 5px, transparent 6px),
-    radial-gradient(ellipse at 89% 21%, #e9c6a0 0 5px, transparent 6px),
-    radial-gradient(ellipse at 92% 25%, #e9b6a9 0 5px, transparent 6px),
-    radial-gradient(ellipse at 89% 28%, #e9c6a0 0 5px, transparent 6px),
-    radial-gradient(circle at 89% 24%, #c99a55 0 2px, transparent 3px),
-    radial-gradient(ellipse at 83% 82%, #e9c6a0 0 5px, transparent 6px),
-    radial-gradient(ellipse at 86% 79%, #e9b6a9 0 5px, transparent 6px),
-    radial-gradient(ellipse at 89% 83%, #e9c6a0 0 5px, transparent 6px),
-    radial-gradient(ellipse at 86% 86%, #e9b6a9 0 5px, transparent 6px),
-    radial-gradient(circle at 86% 82%, #c99a55 0 2px, transparent 3px);
+  opacity: 0.55;
+  background-image:
+    radial-gradient(ellipse 2px 18px at 24% 18%, #a9b79a 95%, transparent 100%),
+    radial-gradient(ellipse 2px 15px at 24% 22%, #a9b79a 95%, transparent 100%),
+    radial-gradient(ellipse 2px 18px at 87% 27%, #a9b79a 95%, transparent 100%),
+    radial-gradient(ellipse 2px 15px at 87% 31%, #a9b79a 95%, transparent 100%),
+    radial-gradient(ellipse 2px 18px at 13% 77%, #a9b79a 95%, transparent 100%),
+    radial-gradient(ellipse 2px 15px at 13% 81%, #a9b79a 95%, transparent 100%);
 }
+
