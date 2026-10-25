@@ -576,4 +576,46 @@ body {
   }
 }
 
+/* PAGINAS INTERIORES: RAMOS FLORALES */
+#root > div:not(.language-screen) {
+  position: relative;
+  isolation: isolate;
+  background-color: #fff8f0;
+  background-image: none;
+}
+
+#root > div:not(.language-screen)::before,
+#root > div:not(.language-screen)::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 260px;
+  height: 340px;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.95;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 400'%3E%3Cg fill='none' stroke='%23768f6b' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M10 400 Q50 300 105 240 T180 130 T250 10 M35 345 Q90 360 125 310 M65 285 Q20 250 15 205 M115 230 Q165 245 190 195 M155 160 Q100 135 90 95 M200 115 Q245 140 275 95 M225 65 Q190 45 185 20'/%3E%3C/g%3E%3Cg fill='%239bb38b'%3E%3Cellipse cx='25' cy='225' rx='10' ry='28' transform='rotate(-35 25 225)'/%3E%3Cellipse cx='105' cy='340' rx='10' ry='28' transform='rotate(55 105 340)'/%3E%3Cellipse cx='165' cy='220' rx='10' ry='28' transform='rotate(55 165 220)'/%3E%3Cellipse cx='100' cy='115' rx='10' ry='28' transform='rotate(-55 100 115)'/%3E%3Cellipse cx='260' cy='115' rx='10' ry='28' transform='rotate(55 260 115)'/%3E%3C/g%3E%3Cg stroke='%23fffaf2' stroke-width='2'%3E%3Cg fill='%23e99aaf' transform='translate(250 28)'%3E%3Cellipse cy='-17' rx='10' ry='19'/%3E%3Cellipse cy='17' rx='10' ry='19'/%3E%3Cellipse cx='-17' rx='19' ry='10'/%3E%3Cellipse cx='17' rx='19' ry='10'/%3E%3Cellipse cx='-12' cy='-12' rx='9' ry='17' transform='rotate(-45 -12 -12)'/%3E%3Cellipse cx='12' cy='12' rx='9' ry='17' transform='rotate(-45 12 12)'/%3E%3C/g%3E%3Cg fill='%23f3c75e' transform='translate(90 95)'%3E%3Cellipse cy='-14' rx='8' ry='16'/%3E%3Cellipse cy='14' rx='8' ry='16'/%3E%3Cellipse cx='-14' rx='16' ry='8'/%3E%3Cellipse cx='14' rx='16' ry='8'/%3E%3Cellipse cx='-10' cy='-10' rx='7' ry='14' transform='rotate(-45 -10 -10)'/%3E%3Cellipse cx='10' cy='10' rx='7' ry='14' transform='rotate(-45 10 10)'/%3E%3C/g%3E%3Cg fill='%23b7a0d0' transform='translate(180 130)'%3E%3Cellipse cy='-15' rx='8' ry='17'/%3E%3Cellipse cy='15' rx='8' ry='17'/%3E%3Cellipse cx='-15' rx='17' ry='8'/%3E%3Cellipse cx='15' rx='17' ry='8'/%3E%3Cellipse cx='-10' cy='-10' rx='7' ry='14' transform='rotate(-45 -10 -10)'/%3E%3Cellipse cx='10' cy='10' rx='7' ry='14' transform='rotate(-45 10 10)'/%3E%3C/g%3E%3Cg fill='%23fffdf7' transform='translate(15 205)'%3E%3Cellipse cy='-13' rx='7' ry='15'/%3E%3Cellipse cy='13' rx='7' ry='15'/%3E%3Cellipse cx='-13' rx='15' ry='7'/%3E%3Cellipse cx='13' rx='15' ry='7'/%3E%3C/g%3E%3Cg fill='%23e99aaf' transform='translate(190 195)'%3E%3Cellipse cy='-13' rx='7' ry='15'/%3E%3Cellipse cy='13' rx='7' ry='15'/%3E%3Cellipse cx='-13' rx='15' ry='7'/%3E%3Cellipse cx='13' rx='15' ry='7'/%3E%3C/g%3E%3Cg fill='%23f3c75e' transform='translate(275 95)'%3E%3Cellipse cy='-12' rx='7' ry='14'/%3E%3Cellipse cy='12' rx='7' ry='14'/%3E%3Cellipse cx='-12' rx='14' ry='7'/%3E%3Cellipse cx='12' rx='14' ry='7'/%3E%3C/g%3E%3C/g%3E%3Cg fill='%23d5a44c'%3E%3Ccircle cx='250' cy='28' r='6'/%3E%3Ccircle cx='90' cy='95' r='5'/%3E%3Ccircle cx='180' cy='130' r='5'/%3E%3Ccircle cx='15' cy='205' r='4'/%3E%3Ccircle cx='190' cy='195' r='4'/%3E%3Ccircle cx='275' cy='95' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#root > div:not(.language-screen)::before {
+  top: 0;
+  left: 0;
+}
+
+#root > div:not(.language-screen)::after {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  #root > div:not(.language-screen)::before,
+  #root > div:not(.language-screen)::after {
+    width: 145px;
+    height: 200px;
+  }
+}
+
 
