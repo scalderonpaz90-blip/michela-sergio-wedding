@@ -162,7 +162,7 @@ function App() {
         <span className="eyebrow">24 · 04 · 2027</span>
         <div className="language-flower">✿</div>
         <h1>Michela <i>&</i> Sergio</h1>
-        <p>Una giornata, una promessa, una vita insieme.</p>
+        
         <p className="language-prompt">Elige tu idioma · Scegli la lingua</p>
         <div className="language-buttons">
           <button onClick={() => setLang("es")}>Español</button>
