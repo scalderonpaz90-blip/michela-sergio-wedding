@@ -497,4 +497,40 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
   }
 }
 
+/* FLORES DE PRIMAVERA EN TODAS LAS PÁGINAS */
+body {
+  background-color: #f8f0e8;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.language-screen ~ *,
+#root > * {
+  --flower-pink: #e8a0b2;
+  --flower-yellow: #f2ce70;
+  --flower-lilac: #b7a0d0;
+  --flower-green: #819b72;
+}
+
+/* Decoración floral en las páginas interiores */
+#root > div:not(.language-screen) {
+  background-color: #f8f0e8;
+  background-image:
+    radial-gradient(ellipse at 3% 5%, #e8a0b250 0 3px, transparent 4px),
+    radial-gradient(ellipse at 5% 7%, #f2ce7070 0 4px, transparent 5px),
+    radial-gradient(ellipse at 8% 4%, #b7a0d060 0 3px, transparent 4px),
+    radial-gradient(ellipse at 96% 8%, #e8a0b260 0 4px, transparent 5px),
+    radial-gradient(ellipse at 93% 5%, #f2ce7070 0 3px, transparent 4px),
+    radial-gradient(ellipse at 97% 12%, #b7a0d060 0 4px, transparent 5px),
+    radial-gradient(ellipse at 4% 94%, #e8a0b260 0 4px, transparent 5px),
+    radial-gradient(ellipse at 8% 97%, #f2ce7070 0 3px, transparent 4px),
+    radial-gradient(ellipse at 96% 94%, #b7a0d260 0 4px, transparent 5px),
+    radial-gradient(ellipse at 92% 97%, #e8a0b260 0 3px, transparent 4px);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 
