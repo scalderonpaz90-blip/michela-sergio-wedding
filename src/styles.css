@@ -29,9 +29,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
   color: #59634c;
   background-color: #faf8f2;
   background-image:
-    radial-gradient(ellipse at 12% 15%, #e9dfd5 0%, transparent 22%),
-    radial-gradient(ellipse at 88% 80%, #e4e8d9 0%, transparent 25%),
-    radial-gradient(ellipse at 80% 12%, #f0e6dc 0%, transparent 18%);
+    radial-gradient(ellipse at 15% 20%, #e8c6c0 0 2px, transparent 3px),
+    radial-gradient(ellipse at 17% 22%, #e8c6c0 0 4px, transparent 5px),
+    radial-gradient(ellipse at 20% 19%, #e9d5b9 0 3px, transparent 4px),
+    radial-gradient(ellipse at 83% 25%, #cbd5bd 0 3px, transparent 4px),
+    radial-gradient(ellipse at 86% 27%, #e8c6c0 0 4px, transparent 5px),
+    radial-gradient(ellipse at 80% 30%, #e9d5b9 0 3px, transparent 4px),
+    radial-gradient(ellipse at 12% 78%, #cbd5bd 0 4px, transparent 5px),
+    radial-gradient(ellipse at 88% 75%, #e8c6c0 0 4px, transparent 5px);
   position: relative;
 }
 
