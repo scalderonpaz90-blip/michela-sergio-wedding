@@ -618,4 +618,68 @@ body {
   }
 }
 
+/* FLORES DECORATIVAS EN LA SEGUNDA PÁGINA */
+
+/* Preparamos las secciones para colocar las flores */
+.hero,
+.details,
+.transport,
+.rsvp,
+footer {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Ramos florales en las esquinas de la portada interior */
+.hero::before,
+.hero::after,
+.details::before,
+.details::after,
+.transport::before,
+.transport::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Ramo de flores rosa, amarillo y azul */
+.hero::before,
+.details::before,
+.transport::before {
+  top: 12px;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 175'%3E%3Cg fill='none' stroke='%237b986b' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M8 165 Q35 100 58 45 M30 155 Q65 115 92 90 M48 130 Q28 95 22 78 M58 90 Q90 65 105 38 M22 120 Q8 95 10 75'/%3E%3C/g%3E%3Cg fill='%23dba1b2'%3E%3Cellipse cx='58' cy='35' rx='8' ry='15'/%3E%3Cellipse cx='43' cy='45' rx='8' ry='15' transform='rotate(-55 43 45)'/%3E%3Cellipse cx='70' cy='48' rx='8' ry='15' transform='rotate(55 70 48)'/%3E%3Cellipse cx='57' cy='55' rx='8' ry='15'/%3E%3C/g%3E%3Ccircle cx='57' cy='45' r='6' fill='%23e9bf65'/%3E%3Cg fill='%23f0c96c'%3E%3Cellipse cx='103' cy='29' rx='6' ry='12'/%3E%3Cellipse cx='91' cy='39' rx='6' ry='12' transform='rotate(-60 91 39)'/%3E%3Cellipse cx='115' cy='40' rx='6' ry='12' transform='rotate(60 115 40)'/%3E%3Cellipse cx='103' cy='45' rx='6' ry='12'/%3E%3C/g%3E%3Ccircle cx='103' cy='38' r='5' fill='%23b97d53'/%3E%3Cg fill='%23a8c6d8'%3E%3Ccircle cx='22' cy='69' r='7'/%3E%3Ccircle cx='12' cy='62' r='6'/%3E%3Ccircle cx='31' cy='60' r='6'/%3E%3Ccircle cx='18' cy='51' r='6'/%3E%3Ccircle cx='28' cy='49' r='5'/%3E%3C/g%3E%3Cg fill='%2399b48b'%3E%3Cellipse cx='35' cy='112' rx='7' ry='15' transform='rotate(-45 35 112)'/%3E%3Cellipse cx='79' cy='102' rx='7' ry='15' transform='rotate(50 79 102)'/%3E%3Cellipse cx='15' cy='143' rx='6' ry='14' transform='rotate(-45 15 143)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Ramo reflejado en el lado derecho */
+.hero::after,
+.details::after,
+.transport::after {
+  top: 12px;
+  right: 0;
+  transform: scaleX(-1);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 175'%3E%3Cg fill='none' stroke='%237b986b' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M8 165 Q35 100 58 45 M30 155 Q65 115 92 90 M48 130 Q28 95 22 78 M58 90 Q90 65 105 38 M22 120 Q8 95 10 75'/%3E%3C/g%3E%3Cg fill='%23dba1b2'%3E%3Cellipse cx='58' cy='35' rx='8' ry='15'/%3E%3Cellipse cx='43' cy='45' rx='8' ry='15' transform='rotate(-55 43 45)'/%3E%3Cellipse cx='70' cy='48' rx='8' ry='15' transform='rotate(55 70 48)'/%3E%3Cellipse cx='57' cy='55' rx='8' ry='15'/%3E%3C/g%3E%3Ccircle cx='57' cy='45' r='6' fill='%23e9bf65'/%3E%3Cg fill='%23f0c96c'%3E%3Cellipse cx='103' cy='29' rx='6' ry='12'/%3E%3Cellipse cx='91' cy='39' rx='6' ry='12' transform='rotate(-60 91 39)'/%3E%3Cellipse cx='115' cy='40' rx='6' ry='12' transform='rotate(60 115 40)'/%3E%3Cellipse cx='103' cy='45' rx='6' ry='12'/%3E%3C/g%3E%3Ccircle cx='103' cy='38' r='5' fill='%23b97d53'/%3E%3Cg fill='%23a8c6d8'%3E%3Ccircle cx='22' cy='69' r='7'/%3E%3Ccircle cx='12' cy='62' r='6'/%3E%3Ccircle cx='31' cy='60' r='6'/%3E%3Ccircle cx='18' cy='51' r='6'/%3E%3Ccircle cx='28' cy='49' r='5'/%3E%3C/g%3E%3Cg fill='%2399b48b'%3E%3Cellipse cx='35' cy='112' rx='7' ry='15' transform='rotate(-45 35 112)'/%3E%3Cellipse cx='79' cy='102' rx='7' ry='15' transform='rotate(50 79 102)'/%3E%3Cellipse cx='15' cy='143' rx='6' ry='14' transform='rotate(-45 15 143)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* En móviles, flores más pequeñas para no tapar los textos */
+@media (max-width: 600px) {
+  .hero::before,
+  .hero::after,
+  .details::before,
+  .details::after,
+  .transport::before,
+  .transport::after {
+    width: 85px;
+    height: 110px;
+    opacity: 0.65;
+  }
+}
+
 
