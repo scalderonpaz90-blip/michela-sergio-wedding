@@ -448,4 +448,53 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
 }
 
 
+/* PORTADA: FLORES SILVESTRES DE PRIMAVERA */
+.language-screen {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(
+    145deg,
+    #f8f0e9 0%,
+    #f5eee4 45%,
+    #e9eee3 100%
+  ) !important;
+}
+
+/* Ramos dibujados sin necesidad de subir imágenes */
+.language-screen::before,
+.language-screen::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(43vw, 390px);
+  height: min(52vw, 460px);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.96;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360'%3E%3Cg fill='none' stroke='%237b9871' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M15 350 Q70 240 130 145 T190 15'/%3E%3Cpath d='M53 300 Q18 245 12 210 M73 265 Q122 264 139 224 M108 202 Q65 180 54 146 M135 154 Q180 158 203 118 M164 98 Q130 72 131 45 M35 323 Q95 325 117 286'/%3E%3C/g%3E%3Cg fill='%239ab18a'%3E%3Cellipse cx='31' cy='235' rx='8' ry='23' transform='rotate(-35 31 235)'/%3E%3Cellipse cx='119' cy='255' rx='8' ry='24' transform='rotate(55 119 255)'/%3E%3Cellipse cx='72' cy='185' rx='8' ry='23' transform='rotate(-55 72 185)'/%3E%3Cellipse cx='184' cy='139' rx='8' ry='23' transform='rotate(45 184 139)'/%3E%3Cellipse cx='145' cy='78' rx='7' ry='21' transform='rotate(-45 145 78)'/%3E%3Cellipse cx='81' cy='309' rx='8' ry='24' transform='rotate(60 81 309)'/%3E%3C/g%3E%3Cg stroke='%23fffaf1' stroke-width='1.5'%3E%3Cg transform='translate(190 35)' fill='%23e8a4b4'%3E%3Cellipse cy='-12' rx='7' ry='13'/%3E%3Cellipse cy='12' rx='7' ry='13'/%3E%3Cellipse cx='-12' rx='13' ry='7'/%3E%3Cellipse cx='12' rx='13' ry='7'/%3E%3Cellipse cx='-8' cy='-8' rx='7' ry='12' transform='rotate(-45 -8 -8)'/%3E%3Cellipse cx='8' cy='8' rx='7' ry='12' transform='rotate(-45 8 8)'/%3E%3C/g%3E%3Cg transform='translate(54 146)' fill='%23f4cc66'%3E%3Cellipse cy='-10' rx='5' ry='10'/%3E%3Cellipse cy='10' rx='5' ry='10'/%3E%3Cellipse cx='-10' rx='10' ry='5'/%3E%3Cellipse cx='10' rx='10' ry='5'/%3E%3C/g%3E%3Cg transform='translate(130 145)' fill='%23b7a0ce'%3E%3Cellipse cy='-10' rx='5' ry='10'/%3E%3Cellipse cy='10' rx='5' ry='10'/%3E%3Cellipse cx='-10' rx='10' ry='5'/%3E%3Cellipse cx='10' rx='10' ry='5'/%3E%3Cellipse cx='-7' cy='-7' rx='5' ry='9' transform='rotate(-45 -7 -7)'/%3E%3Cellipse cx='7' cy='7' rx='5' ry='9' transform='rotate(-45 7 7)'/%3E%3C/g%3E%3Cg transform='translate(12 210)' fill='%23fffdf5'%3E%3Cellipse cy='-9' rx='5' ry='9'/%3E%3Cellipse cy='9' rx='5' ry='9'/%3E%3Cellipse cx='-9' rx='9' ry='5'/%3E%3Cellipse cx='9' rx='9' ry='5'/%3E%3C/g%3E%3Cg transform='translate(203 118)' fill='%23e8a4b4'%3E%3Cellipse cy='-9' rx='5' ry='10'/%3E%3Cellipse cy='9' rx='5' ry='10'/%3E%3Cellipse cx='-9' rx='10' ry='5'/%3E%3Cellipse cx='9' rx='10' ry='5'/%3E%3C/g%3E%3C/g%3E%3Cg fill='%23d5a44c'%3E%3Ccircle cx='190' cy='35' r='5'/%3E%3Ccircle cx='54' cy='146' r='4'/%3E%3Ccircle cx='130' cy='145' r='4'/%3E%3Ccircle cx='12' cy='210' r='3.5'/%3E%3Ccircle cx='203' cy='118' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.language-screen::before {
+  top: 0;
+  left: 0;
+}
+
+.language-screen::after {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+/* En pantallas pequeñas, las flores ocupan menos espacio */
+@media (max-width: 600px) {
+  .language-screen::before,
+  .language-screen::after {
+    width: 52vw;
+    height: 58vw;
+    opacity: 0.82;
+  }
+}
+
 
