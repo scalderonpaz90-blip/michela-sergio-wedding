@@ -270,3 +270,53 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
   .section { padding: 70px 22px; }
   .hero nav { padding: 22px; }
 }
+
+/* Portada floral delicada */
+.language-screen {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #fffaf2 !important;
+}
+
+/* Flores suaves a la izquierda */
+.language-screen::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  background:
+    radial-gradient(ellipse at 12% 18%, #e9a6a7 0 5px, transparent 6px),
+    radial-gradient(ellipse at 15% 15%, #f3c8bd 0 5px, transparent 6px),
+    radial-gradient(ellipse at 18% 19%, #e9a6a7 0 5px, transparent 6px),
+    radial-gradient(ellipse at 15% 22%, #f3c8bd 0 5px, transparent 6px),
+    radial-gradient(circle at 15% 19%, #c99a55 0 2px, transparent 3px),
+    radial-gradient(ellipse at 8% 72%, #e9b6a9 0 5px, transparent 6px),
+    radial-gradient(ellipse at 11% 69%, #e9c6a0 0 5px, transparent 6px),
+    radial-gradient(ellipse at 14% 73%, #e9b6a9 0 5px, transparent 6px),
+    radial-gradient(ellipse at 11% 76%, #e9c6a0 0 5px, transparent 6px),
+    radial-gradient(circle at 11% 72%, #c99a55 0 2px, transparent 3px);
+}
+
+/* Flores suaves a la derecha */
+.language-screen::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  background:
+    radial-gradient(ellipse at 86% 24%, #e9b6a9 0 5px, transparent 6px),
+    radial-gradient(ellipse at 89% 21%, #e9c6a0 0 5px, transparent 6px),
+    radial-gradient(ellipse at 92% 25%, #e9b6a9 0 5px, transparent 6px),
+    radial-gradient(ellipse at 89% 28%, #e9c6a0 0 5px, transparent 6px),
+    radial-gradient(circle at 89% 24%, #c99a55 0 2px, transparent 3px),
+    radial-gradient(ellipse at 83% 82%, #e9c6a0 0 5px, transparent 6px),
+    radial-gradient(ellipse at 86% 79%, #e9b6a9 0 5px, transparent 6px),
+    radial-gradient(ellipse at 89% 83%, #e9c6a0 0 5px, transparent 6px),
+    radial-gradient(ellipse at 86% 86%, #e9b6a9 0 5px, transparent 6px),
+    radial-gradient(circle at 86% 82%, #c99a55 0 2px, transparent 3px);
+}
