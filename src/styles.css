@@ -306,51 +306,7 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
 }
 
 /* Decoración floral en los bordes */
-.language-screen::before {
-  content: "✿";
-  position: absolute;
-  top: 9%;
-  left: 8%;
-  color: #d9a0a0;
-  font-size: 46px;
-  font-weight: 400;
-  opacity: 0.75;
-  transform: rotate(-18deg);
-  text-shadow:
-    14px 22px 0 #e8c6b2,
-    48px 105px 0 #d8b7bd,
-    8px 220px 0 #e8d9a8,
-    35px 340px 0 #d9a0a0;
-  pointer-events: none;
-  z-index: -1;
-}
 
-.language-screen::after {
-  content: "✿";
-  position: absolute;
-  right: 9%;
-  bottom: 10%;
-  color: #c7cfb5;
-  font-size: 42px;
-  opacity: 0.8;
-  transform: rotate(16deg);
-  text-shadow:
-    -18px -40px 0 #e8c6b2,
-    -42px -140px 0 #d9a0a0,
-    -6px -245px 0 #e8d9a8,
-    -32px -350px 0 #c7cfb5;
-  pointer-events: none;
-  z-index: -1;
-}
-
-
-/* Portada nupcial: flores delicadas y tonos acuarela */
-.language-screen {
-  background: #fbf8f2 !important;
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-}
 
 /* Mantener el texto de la portada por encima de la decoración */
 .language-screen > * {
