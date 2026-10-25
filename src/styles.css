@@ -533,4 +533,47 @@ body {
   background-size: 100% 100%;
 }
 
+/* PORTADA: JARDÍN SILVESTRE DE PRIMAVERA */
+.language-screen {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, #fff7ed 0%, #f8e9e4 48%, #edf1e4 100%) !important;
+}
+
+.language-screen::before,
+.language-screen::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(48vw, 440px);
+  height: min(62vw, 540px);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 400'%3E%3Cg fill='none' stroke='%23768f6b' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M8 395 Q35 320 75 275 T135 180 T195 80 T235 8 M28 350 Q90 355 108 310 M60 295 Q18 255 16 220 M95 245 Q150 255 164 205 M125 190 Q70 160 60 125 M165 125 Q220 150 245 110 M195 78 Q155 55 155 25 M48 330 Q5 305 8 275 M105 225 Q75 205 77 180'/%3E%3C/g%3E%3Cg fill='%239bb38b'%3E%3Cellipse cx='23' cy='240' rx='9' ry='25' transform='rotate(-35 23 240)'/%3E%3Cellipse cx='92' cy='340' rx='9' ry='26' transform='rotate(55 92 340)'/%3E%3Cellipse cx='142' cy='225' rx='8' ry='24' transform='rotate(55 142 225)'/%3E%3Cellipse cx='75' cy='155' rx='8' ry='23' transform='rotate(-55 75 155)'/%3E%3Cellipse cx='225' cy='130' rx='9' ry='25' transform='rotate(55 225 130)'/%3E%3Cellipse cx='170' cy='57' rx='8' ry='23' transform='rotate(-50 170 57)'/%3E%3Cellipse cx='24' cy='300' rx='8' ry='23' transform='rotate(-50 24 300)'/%3E%3C/g%3E%3Cg stroke='%23fff9ef' stroke-width='1.4'%3E%3Cg fill='%23e99aaf' transform='translate(235 25)'%3E%3Cellipse cy='-15' rx='9' ry='17'/%3E%3Cellipse cy='15' rx='9' ry='17'/%3E%3Cellipse cx='-15' rx='17' ry='9'/%3E%3Cellipse cx='15' rx='17' ry='9'/%3E%3Cellipse cx='-11' cy='-11' rx='8' ry='15' transform='rotate(-45 -11 -11)'/%3E%3Cellipse cx='11' cy='11' rx='8' ry='15' transform='rotate(-45 11 11)'/%3E%3C/g%3E%3Cg fill='%23f3c75e' transform='translate(60 125)'%3E%3Cellipse cy='-12' rx='7' ry='13'/%3E%3Cellipse cy='12' rx='7' ry='13'/%3E%3Cellipse cx='-12' rx='13' ry='7'/%3E%3Cellipse cx='12' rx='13' ry='7'/%3E%3Cellipse cx='-8' cy='-8' rx='6' ry='11' transform='rotate(-45 -8 -8)'/%3E%3Cellipse cx='8' cy='8' rx='6' ry='11' transform='rotate(-45 8 8)'/%3E%3C/g%3E%3Cg fill='%23b7a0d0' transform='translate(135 180)'%3E%3Cellipse cy='-12' rx='7' ry='14'/%3E%3Cellipse cy='12' rx='7' ry='14'/%3E%3Cellipse cx='-12' rx='14' ry='7'/%3E%3Cellipse cx='12' rx='14' ry='7'/%3E%3Cellipse cx='-8' cy='-8' rx='6' ry='11' transform='rotate(-45 -8 -8)'/%3E%3Cellipse cx='8' cy='8' rx='6' ry='11' transform='rotate(-45 8 8)'/%3E%3C/g%3E%3Cg fill='%23fffdf5' transform='translate(16 220)'%3E%3Cellipse cy='-11' rx='6' ry='12'/%3E%3Cellipse cy='11' rx='6' ry='12'/%3E%3Cellipse cx='-11' rx='12' ry='6'/%3E%3Cellipse cx='11' rx='12' ry='6'/%3E%3C/g%3E%3Cg fill='%23e99aaf' transform='translate(164 205)'%3E%3Cellipse cy='-10' rx='6' ry='12'/%3E%3Cellipse cy='10' rx='6' ry='12'/%3E%3Cellipse cx='-10' rx='12' ry='6'/%3E%3Cellipse cx='10' rx='12' ry='6'/%3E%3C/g%3E%3Cg fill='%23f3c75e' transform='translate(245 110)'%3E%3Cellipse cy='-11' rx='6' ry='12'/%3E%3Cellipse cy='11' rx='6' ry='12'/%3E%3Cellipse cx='-11' rx='12' ry='6'/%3E%3Cellipse cx='11' rx='12' ry='6'/%3E%3C/g%3E%3C/g%3E%3Cg fill='%23d5a44c'%3E%3Ccircle cx='235' cy='25' r='6'/%3E%3Ccircle cx='60' cy='125' r='5'/%3E%3Ccircle cx='135' cy='180' r='5'/%3E%3Ccircle cx='16' cy='220' r='4'/%3E%3Ccircle cx='164' cy='205' r='4'/%3E%3Ccircle cx='245' cy='110' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.language-screen::before {
+  top: 0;
+  left: 0;
+}
+
+.language-screen::after {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .language-screen::before,
+  .language-screen::after {
+    width: 55vw;
+    height: 68vw;
+  }
+}
+
 
