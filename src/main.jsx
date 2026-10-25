@@ -160,7 +160,7 @@ function App() {
     return (
       <main className="language-screen">
         <span className="eyebrow">24 · 04 · 2027</span>
-        <div className="language-flower">✿</div>
+        
         <h1>Michela <i>&</i> Sergio</h1>
         
         <p className="language-prompt">Elige tu idioma · Scegli la lingua</p>
