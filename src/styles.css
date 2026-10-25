@@ -343,4 +343,40 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
   z-index: -1;
 }
 
+/* Flores silvestres de primavera */
+.language-screen {
+  background: #fbf7ef !important;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.language-screen::before {
+  content: "🌼 🌿 🌸\A  🌷 🌼 🌿";
+  white-space: pre;
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  font-size: clamp(22px, 5vw, 34px);
+  line-height: 2;
+  opacity: 0.85;
+  transform: rotate(-10deg);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.language-screen::after {
+  content: "🌿 🌸 🌷\A 🌼 🌿 🌸";
+  white-space: pre;
+  position: absolute;
+  right: 3%;
+  bottom: 4%;
+  font-size: clamp(22px, 5vw, 34px);
+  line-height: 2;
+  opacity: 0.85;
+  transform: rotate(10deg);
+  pointer-events: none;
+  z-index: -1;
+}
+
 
