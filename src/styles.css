@@ -220,6 +220,28 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
 }
 
 .language-screen .eyebrow { letter-spacing: .25em; color: #707960; }
+/* Delicadas flores de acuarela */
+.hero::before,
+.language-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.55;
+  background-image:
+    radial-gradient(ellipse at 18% 24%, #d9a9a5 0 2px, transparent 3px),
+    radial-gradient(ellipse at 21% 27%, #d9a9a5 0 3px, transparent 4px),
+    radial-gradient(ellipse at 24% 23%, #e6c5a8 0 2px, transparent 3px),
+    radial-gradient(ellipse at 78% 34%, #c5cfae 0 3px, transparent 4px),
+    radial-gradient(ellipse at 81% 37%, #d9a9a5 0 2px, transparent 3px),
+    radial-gradient(ellipse at 75% 39%, #e6c5a8 0 3px, transparent 4px);
+}
+
+.hero,
+.language-screen {
+  position: relative;
+  overflow: hidden;
+}
 .language-screen h1 { color: #3d4939; font-size: clamp(40px, 8vw, 68px); }
 .language-screen > p { color: #727568; line-height: 1.8; }
 .language-flower { font-size: 52px; color: #8d997b; margin-top: 20px; }
