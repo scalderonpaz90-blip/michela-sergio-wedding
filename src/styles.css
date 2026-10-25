@@ -415,5 +415,37 @@ footer span { font: 10px 'DM Sans', sans-serif; letter-spacing: .2em; }
   background-image: url("/flowers-watercolor.png");
 }
 
+/* Flores botánicas en las esquinas de la portada */
+.language-screen {
+  position: relative;
+  isolation: isolate;
+}
+
+.language-screen::before,
+.language-screen::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  height: 360px;
+  background-image: url("/flowers-watercolor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.language-screen::before {
+  top: 0;
+  left: 0;
+}
+
+.language-screen::after {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
 
 
